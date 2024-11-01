@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 6</title>
+    <style>
+        .tooltip-container {
+            position: relative;
+            background-color: aqua;
+            width: 50px;
+            height: 20px;
+            margin-top: 300px;
+        }
+        
+        .tooltip {
+            background-color: rgb(0, 0, 0);
+            color: white;
+            padding: 3px 7px;
+            position: absolute;
+            top: -50px;
+            opacity: 0;
+            /* visibility: hidden; */
+        }
+        
+        .tooltip-container:hover .tooltip {
+            opacity: 5;
+            /* visibility: visible; */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="tooltip-container">
+        <p>Top</p>
+        <p class="tooltip">ToolTip</p>
+    </div>
+</body>
+
+</html>

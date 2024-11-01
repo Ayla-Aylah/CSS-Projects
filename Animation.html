@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 5</title>
+    <style>
+        .color {
+            width: 80px;
+            height: 50px;
+            background-color: rgb(255, 169, 169);
+            border-radius: 20px;
+            position: relative;
+            /* animation-name: ChangeColor;
+            animation-duration: 10s;
+            animation-delay: 5s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear; */
+            animation: ChangeColor 5s linear 5s infinite;
+        }
+        
+        @keyframes ChangeColor {
+            0% {
+                left: 30px;
+                top: 0;
+            }
+            25% {
+                transform: rotate(30deg);
+                left: 70px;
+                top: 0;
+            }
+            50% {
+                transform: rotate(90deg);
+                left: 140px;
+                top: 0;
+            }
+            75% {
+                transform: rotate(190deg);
+                left: 250px;
+                top: 0;
+            }
+            85% {
+                transform: rotate(265deg);
+                left: 70PX;
+            }
+            100% {
+                transform: rotate(360deg);
+                left: 0;
+                top: 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="color"></div>
+
+</body>
+
+</html>

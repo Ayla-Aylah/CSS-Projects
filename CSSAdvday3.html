@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 3</title>
+</head>
+<style>
+    div {
+        background-color: aqua !important;
+    }
+    
+    .col {
+        background-color: blue;
+    }
+    
+    #one {
+        background-color: black;
+    }
+    
+    .parent div {
+        background-color: aquamarine;
+    }
+    
+    .layout {
+        margin-top: 5px;
+        width: 500px;
+        height: 500px;
+        background-image: url(../YoutubeProject/img/calamari.jpeg), url(../YoutubeProject/img/calamari.jpeg);
+        background-position: right top, left bottom;
+        background-repeat: no-repeat, no-repeat;
+        background-size: 200px, 300px;
+        border: 1px solid black;
+    }
+</style>
+
+<body>
+
+    <div class="parent">
+        <div class="col" id="one">
+        </div>
+    </div>
+    <div class="layout"></div>
+</body>
+
+</html>
